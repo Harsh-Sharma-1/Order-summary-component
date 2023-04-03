@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+h1 {
+    font-size: 20px;
+    color: var(--dark-blue);
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/pattern-background-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pale-blue);
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 14px 25px 0px rgba(56, 41, 224, 0.21);
+    -moz-box-shadow: 2px 14px 25px 0px rgba(56, 41, 224, 0.21);
+    box-shadow: 2px 14px 25px 0px rgba(56, 41, 224, 0.21);
+}
+
+.card__image {
+    background-image: url('./images/illustration-hero.svg');
+    background-size: cover;
+}
+
+.card__content {
+    padding: 40px;
+}
+
+.card__image div {
+    height: 200px;
+}
+
+.card__heading {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card__description {
+    text-align: center;
+    word-spacing: 2px;
+    padding: 5px;
+    color: var(--desaturated-blue);
+    margin-bottom: 15px;
+}
+
+.card__info {
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+}
+
+.card__info .left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.card__info .left h1 {
+    font-size: 13px;
+}
+
+.card__info .left p {
+    color: var(--desaturated-blue);
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.card .right a {
+    font-weight: bold;
+    color: var(--bright-blue);
+    font-size: 12px;
+}
+
+.card__button {
+    display: block;
+    width: 100%;
+    overflow: 0;
+    border: 0;
+    padding: 12px;
+    background-color: var(--bright-blue);
+    color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 14px 25px 0px rgba(56, 41, 224, 0.21);
+    -moz-box-shadow: 2px 14px 25px 0px rgba(56, 41, 224, 0.21);
+    box-shadow: 2px 14px 25px 0px rgba(56, 41, 224, 0.21);
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.card__link {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--desaturated-blue);
+}
